@@ -3,12 +3,12 @@ default_step_lib_source: "https://github.com/bitrise-io/bitrise-steplib.git"
 
 app:
   envs:
-    - PROJECT_PATH: "Historyy Quiz.xcodeproj"
-    - SCHEME: "Historyy Quiz"
+    - PROJECT_PATH: "Kras.xcodeproj"
+    - SCHEME: "Kras"
     - EXPORT_METHOD: "app-store"
-    - BUNDLE_ID: "com.mnemoriaIG.jonesJ"
-    - TEAM_ID: "H9GQX8UW3V"
-    - PROFILE_UUID: "a9eaf857-6448-4002-8e24-9f138e0ee04d"
+    - BUNDLE_ID: "ro.verbanova.cuplino"
+    - TEAM_ID: "QMVWY47AH3"
+    - PROFILE_UUID: "1885e7e9-a916-4269-8c43-0bc4a1ee435e"
 
 workflows:
   archive_and_export_app:
@@ -56,5 +56,3 @@ workflows:
             - verbose_log: "yes"
             # (опц.) если хочешь явно указать bundle_id:
             # - bundle_id: "$BUNDLE_ID"
-
-      - deploy-to-bitrise-io@2: {}     -destination 'generic/platform=iOS' DEVELOPMENT_TEAM=F87B8NUZG6 CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution" PROVISIONING_PROFILE="9b9ed8ad-8c6e-4933-affd-7adc72ed9712"
